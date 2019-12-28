@@ -15,7 +15,7 @@ setup(
     name="django-impression-client",
     version=impression_client.__version__,
     packages=find_packages(),
-    install_requires=["Django>=2", "djangorestframework>=3", "requests>=2"],
+    install_requires=["Django>=2", "requests>=2"],
     description="Client app for Impression.",
     long_description=long_description,
     url="https://github.com/gregschmit/django-impression-client",
