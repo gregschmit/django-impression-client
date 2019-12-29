@@ -6,7 +6,7 @@ import requests
 
 from django.core.mail.backends.base import BaseEmailBackend
 
-from ..settings import get_setting
+from .settings import get_setting
 
 
 class RemoteEmailBackend(BaseEmailBackend):

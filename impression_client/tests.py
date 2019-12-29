@@ -113,7 +113,7 @@ class RemoteEmailBackendTestCase(TestCase):
         self.assertEqual(call_kwargs["headers"]["Authorization"], "Token bad_key")
 
     @mock.patch("requests.post")
-    @override_settings(EMAIL_BACKEND="impression.client.backends.RemoteEmailBackend")
+    @override_settings(EMAIL_BACKEND="impression_client.backends.RemoteEmailBackend")
     def test_send_message_with_django(self, f):
         """
         Test sending email via Django using the proper setting.
